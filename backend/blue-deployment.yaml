@@ -29,4 +29,7 @@ spec:
         image: algotsarika/backend:1.0.0
         ports:
         - containerPort: 8080
-       
+        envFrom:
+          - configMapRef:
+              name: backend
+        
