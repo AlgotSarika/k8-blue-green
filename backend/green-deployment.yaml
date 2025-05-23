@@ -10,7 +10,7 @@ metadata:
     project: expense
     version: green
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: backend
