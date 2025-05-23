@@ -3,7 +3,6 @@ kind: Deployment
 metadata:
   name: backend-blue
   namespace: expense
-  # labels of deployment resource
   labels:
     app: backend
     tier: backend
@@ -27,7 +26,9 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: lakshman143/blue:1.0
+        image: algotsarika/backend:1.0.0
+        ports:
+        - containerPort: 8080
         envFrom:
         - configMapRef:
             name: backend
