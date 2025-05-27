@@ -1,15 +1,15 @@
 kind: Service
-apiVersion: v1
-metadata:
+apiVersion: v1 
+metadata: 
   name: backend
   namespace: expense
 spec:
-  selector: # labels are used as selectors
+  selector: 
+    project: expense
     app: backend
     tier: backend
-    project: expense
     version: blue
   ports:
   - protocol: TCP
-    port: 8080 # service port
     targetPort: 8080
+    port: 8080

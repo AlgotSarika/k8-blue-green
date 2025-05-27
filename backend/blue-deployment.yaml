@@ -1,35 +1,32 @@
 apiVersion: apps/v1
 kind: Deployment
-metadata:
+metadata: 
   name: backend-blue
   namespace: expense
-  labels:
+  labels: 
+    project: expense
     app: backend
     tier: backend
-    project: expense
     version: blue
-spec:
+spec: 
   replicas: 1
   selector:
     matchLabels:
+      project: expense
       app: backend
       tier: backend
-      project: expense
       version: blue
   template:
-    metadata:
-      labels:
+    metadata: 
+      labels: 
+        project: expense
         app: backend
         tier: backend
-        project: expense
         version: blue
     spec:
       containers:
-      - name: nginx
-        image: algotsarika/backend:1.0.0
-        ports:
-        - containerPort: 8080
+      - name: backend
+        image: lakshman143/blue:1.0
         envFrom:
-          - configMapRef:
-              name: backend
-        
+        - configMapRef:
+            name: backend
