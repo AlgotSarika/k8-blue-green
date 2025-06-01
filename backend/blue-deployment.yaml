@@ -30,7 +30,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: algotsarika/backend:1.0.0
+        image: algotsarika/backend:3.0.0
         envFrom:
         - configMapRef:
             name: backend
