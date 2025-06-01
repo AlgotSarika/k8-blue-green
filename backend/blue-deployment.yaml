@@ -1,11 +1,11 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: backend
+  name: backend-blue
   namespace: expense
   # labels of deployment resource
   labels:
-    app: backend-blue
+    app: backend
     tier: backend
     project: expense
     version: blue
