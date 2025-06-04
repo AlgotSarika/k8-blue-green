@@ -7,7 +7,7 @@ metadata:
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTPS": 443}]'
-    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:879381244178:certificate/5c7444d4-4b13-4397-82ce-5ac38e21b3c6
+    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:879381244178:certificate/d8ecc6a3-775e-4b8e-8d4c-227ff4f88911
     alb.ingress.kubernetes.io/group.name: algotsarika
 spec:
   ingressClassName: alb
